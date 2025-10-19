@@ -42,8 +42,8 @@ public class Ventana {
                             return;
                         }
                     }
-                    if (cedulaStr.length()>10) {
-                        JOptionPane.showMessageDialog(null, "La cédula no puede tener más de 10 dígitos.");
+                    if (cedulaStr.length()<6 || cedulaStr.length()>10) {
+                        JOptionPane.showMessageDialog(null, "Formato de cédula incorrecto.");
                         return;
                     }
 
